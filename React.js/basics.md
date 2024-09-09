@@ -15,6 +15,29 @@ JSX is able to:
 
 ## How does a React app start up?
 
+- All js files inside my project structure are bundled together into a single file, them sent to a server
+- User makes a request to the server and gets an HTML PLUS the bundle
+- User´s browser executes the code
+
+After first server response, browser takes the index.html file and gets an instruction to execute the bundle file.
+
+`bundle file` is the place where our react app lives.
+
+Then, React start up like this:
+
+- Find the div with id of 'root' in the DOM
+- Tell React to take control of that element
+- Tell React to get JSX from the APP component, turn into HTML and show in the root
+
 ## what is the 'useState' function?
 
+`useState` is a special function that works with React´s 'state' system
+
+State is like a variable in React.
+
+State is used to store data that changes over time.
+
+Whenever state changes, React automatically updates content on the screen.
+
 ## How to use an external API on a React app?
+
