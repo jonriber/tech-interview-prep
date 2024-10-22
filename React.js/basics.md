@@ -10,6 +10,7 @@ Well, React basically do 2 things on the browser:
 Using JSX, we are able to tell React the whats and hows on displaying content to the page.
 
 JSX is able to:
+
 - Tell React to create a normal HTML element on the page
 - Tell React to show another component on the page
 
@@ -41,3 +42,12 @@ Whenever state changes, React automatically updates content on the screen.
 
 ## How to use an external API on a React app?
 
+## How to show basic content
+
+There are five steps that must be followed in order to show basic content
+
+1- import the React and ReactDom libraries
+2- get a reference to the div with ID root
+3- Tell React to take control of that element
+4- Create a component
+5- Show the component on the screen
