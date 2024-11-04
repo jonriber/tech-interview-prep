@@ -13,3 +13,5 @@ Structure for scalability: If you need to add more topics later (e.g., algorithm
 
 - React
 - TypeScript
+- RESTful API´s
+- Leet code challenges (algo & logic)
