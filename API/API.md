@@ -21,3 +21,8 @@ Resources are the information that different applications provide to their clien
 text, numbers, or any type of data. The machine that gives the resource to the client is also called the server.
 Organizations use APIs to share resources and provide web services while maintaining security, control, and
 authentication. In addition, APIs help them to determine which clients get access to specific internal resources.
+
+
+## Extenal links
+
+https://aws.amazon.com/what-is/restful-api/
