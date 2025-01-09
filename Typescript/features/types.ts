@@ -10,4 +10,21 @@ const person = {
 class Color {
 
 }
-const red = new Color();
+
+const red:Color = new Color();
+
+let colors: string[] = ['red', 'green', 'blue'];
+let myNumbers: number[] = [1, 2, 3];
+let truths: boolean[] = [true, false, true];
+
+let point: { x: number; y: number; state: string } = {
+  x: 10,
+  y: 20,
+  state: 'active'
+}
+
+// Function declaration
+
+let logNumber: (i:number) => void = (i: number) => {
+  console.log(i);
+}
