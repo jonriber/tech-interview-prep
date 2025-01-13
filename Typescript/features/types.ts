@@ -28,3 +28,15 @@ let point: { x: number; y: number; state: string } = {
 let logNumber: (i:number) => void = (i: number) => {
   console.log(i);
 }
+
+const json = '{"x": 10, "y": 20}';
+const coordinates = JSON.parse(json);
+
+let colors2 = ['red', 'green', 'blue'];
+let foundColor:boolean;
+
+for (let i = 0; i < colors2.length; i++) {
+  if (colors2[i] === 'green') {
+    foundColor = true;
+  }
+}
