@@ -40,3 +40,12 @@ for (let i = 0; i < colors2.length; i++) {
     foundColor = true;
   }
 }
+
+let numbers = [-10, -1, 12];
+let numbersAboveZero: boolean | number = false;
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 0) {
+    numbersAboveZero = numbers[i];
+  }
+}
