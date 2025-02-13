@@ -7,3 +7,4 @@ Preping about Next.js interview
 `getServerSideProps` and `getStaticProps` terms are the core of this topic. A deep understanding of what these two
 methods are doing on the background is the main objective.
 
+Also `getStaticPaths` for dynamic generation with parameters.
