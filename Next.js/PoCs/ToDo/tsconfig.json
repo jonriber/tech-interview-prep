@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": "app/",
+    "baseUrl": "app",
     "paths": {
       "@/styles/*": ["styles/*"],
-      "@/ui/*": ["ui/*"]
+      "@/ui/*": ["ui/*"],
+      "@/lib/*": ["lib/*"],
     },
     "target": "ES2017",
     "lib": [
