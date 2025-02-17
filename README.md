@@ -9,3 +9,9 @@ topics, system designs, tools, frameworks and languages.
 - TypeScript
 - RESTful API´s
 - Leet code challenges (algo & logic)
+- HarckerRank Code Challenges
+- Design Patterns
+- Rendering Patterns
+- Next.js
+- Python
+- OOP
