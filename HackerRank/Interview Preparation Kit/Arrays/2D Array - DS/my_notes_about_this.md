@@ -1,0 +1,1 @@
+# Notes and observations about the 2D array problem
