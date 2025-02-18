@@ -2,6 +2,8 @@
 #first attempt
 def repeatedString(s, n):
     # Write your code here
+    if len(s) <1 | n < 1 :
+        return 0
     print("input s:",s)
     print("input n:",n)
     
