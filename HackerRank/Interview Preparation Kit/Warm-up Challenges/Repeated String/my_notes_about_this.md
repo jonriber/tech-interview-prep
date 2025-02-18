@@ -2,6 +2,9 @@
 
 This is a warm-up challenge, an easy one, where you are just getting used to the Hacker Rank system.
 
+## First reading
+
+
 ## Logic
 
 Probably, major issue is to identify and understand the problem. After that, think about what makes sense and tools you
