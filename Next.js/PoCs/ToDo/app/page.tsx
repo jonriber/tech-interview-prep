@@ -5,7 +5,7 @@ export default function Page() {
   let showExternalImg = false;
   return(
     <>
-      <h1>Next.js App</h1>
+      <h1 className='text-3xl font-bold underline'>Next.js App</h1>
       {/* {showExternalImg && <Image src="https://via.placeholder.com/150" alt="Placeholder" width={500} height={500}/>} */}
       <Image src={buildPic} alt="Building pic"/>
     </>
