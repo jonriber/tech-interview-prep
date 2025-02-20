@@ -1,7 +1,15 @@
-'use client';
-import React from "react";
-import { createPost } from "@/lib/actions";
-
+'use client'
+ 
+import { useActionState } from 'react'
+import { createPost } from '@/lib/actions'
+import { LoadingSpinner } from '@/app/ui/loading-spinner'
+ 
 export function Button() {
-  return <button formAction={createPost}>Create</button>
+  const [state, action, pending] = useActionState(createPost, false)
+ 
+  return (
+    <button onClick={async () => action()}>
+      {pending ? <LoadingSpinner /> : 'Create Post'}
+    </button>
+  )
 }
