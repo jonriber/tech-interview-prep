@@ -23,7 +23,11 @@ Top left corner of an hourglass can only start within the first 4 rows and colum
 
 hourglass format:
 
+```
+
 1 1 1
   1  
 1 1 1
+
+```
 
