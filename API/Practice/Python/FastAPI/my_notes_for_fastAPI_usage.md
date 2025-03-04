@@ -13,6 +13,8 @@ All I had to do was to create a new file called `main.py` and import 2 things: `
 Then, initiate a new instance of fastAPI inside a variable called `app`, pretty much the same I usually do for a 
 `DB Instance on javascript or Python`.
 
+FastAPI is a Python class that provides all the functionality for your API.
+
 ### Defining endpoints and methods
 
 Using a decorator above function definition to tell fastAPI framework what means what.
@@ -40,3 +42,12 @@ Then, navigate to the folder where your `main.py` is.
 On your terminal, run `fastapi dev main.py`
 
 A local server will be build on your computer´s `localhost:8000`
+
+
+## FastAPI Schema
+
+A "schema" is a definition or description of something. Not the code that implements it, but just an
+abstract description.
+
+The OpenAPI schema is what powers the two interactive documentation systems included.
+
