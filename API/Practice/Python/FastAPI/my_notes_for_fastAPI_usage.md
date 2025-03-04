@@ -31,3 +31,12 @@ This tells me that:
 - I am defining the `HTTP GET method`
 - Setting my endpoint route
 
+## How to run the code
+
+First of all, initialize `venv`.
+
+Then, navigate to the folder where your `main.py` is.
+
+On your terminal, run `fastapi dev main.py`
+
+A local server will be build on your computer´s `localhost:8000`
