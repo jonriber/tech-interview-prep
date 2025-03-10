@@ -18,3 +18,4 @@ I am supposed to find the min number of swaps required to sort the array in **as
 
 One could use the greedy approach with the concept of cycle decomposition.
 
+### Greedy approach
