@@ -16,3 +16,5 @@ I am supposed to find the min number of swaps required to sort the array in **as
 
 ## Solution approach
 
+One could use the greedy approach with the concept of cycle decomposition.
+
