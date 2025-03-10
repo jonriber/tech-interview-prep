@@ -25,4 +25,16 @@ def create_book(book:Book):
   books_db.append(book.dict())
   return books_db[-1]
 
-## 
+## Read all books using the GET method
+@app.get("/books/")
+def get_books():
+  return books_db
+
+## Read a single book using the GET method
+@app.get("/books/{book_id}")
+def get_book(book_id: int):
+  for book in books_db:
+    if book["id"] == book_id:
+      return book
+  return {"error": "Book not found"}
+
