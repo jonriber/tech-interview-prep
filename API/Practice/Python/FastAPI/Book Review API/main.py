@@ -1,29 +1,53 @@
-from fastapi import FastAPI
-from models import Review, Book
+from fastapi import FastAPI, Depends, HTTPException
+from models import Review, Book, Base
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy.future import select
+from database import SessionLocal, engine
+from pydantic import BaseModel
+from typing import List
 
 
-## Data base Mock 
 
-books_db = [
-  {"id": 1, "title": "1984", "author": "George Orwell", "description": "Dystopian novel.", "reviews": []},
-  {"id": 2, "title": "To Kill a Mockingbird", "author": "Harper Lee", "description": "Classic novel.", "reviews": []}
-]
+# ## Data base Mock 
 
+# books_db = [
+#   {"id": 1, "title": "1984", "author": "George Orwell", "description": "Dystopian novel.", "reviews": []},
+#   {"id": 2, "title": "To Kill a Mockingbird", "author": "Harper Lee", "description": "Classic novel.", "reviews": []}
+# ]
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
+async def get_db() -> AsyncSession:
+  async with SessionLocal() as session:
+    yield session
+
+class BookCreate(BaseModel):
+  title: str
+  author: str
+  description: str
+  
+class ReviewCreate(BaseModel):
+  user: str
+  rating: int
+  review: str
+
 @app.get("/")
-def read_root():
+async def read_root():
   return {"message": "Welcome to the Book Review API"}
 
 ## Defining my CRUD ROUTES
-
-
 ## Create new book using the POST method
-@app.post("/books/")
-def create_book(book:Book):
-  books_db.append(book.dict())
-  return books_db[-1]
+@app.post("/books/", response_model=Book)
+async def create_book(book:Book, db: AsyncSession = Depends(get_db)):
+  db_book = Book(**book.dict())
+  db.add(db_book)
+  await db.commit()
+  await db.refresh(db_book)
+  return db_book
+  # books_db.append(book.dict())
+  # return books_db[-1]
 
 ## Read all books using the GET method
 @app.get("/books/")
