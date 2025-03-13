@@ -7,7 +7,7 @@ SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin@localhost/book_review_db"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-base = declarative_base()
+Base = declarative_base()
 
 def initialize_db(database):
   database.connect()
