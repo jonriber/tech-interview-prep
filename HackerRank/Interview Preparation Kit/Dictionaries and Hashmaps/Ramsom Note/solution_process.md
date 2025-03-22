@@ -15,3 +15,8 @@ So, first thing is: what tools should I use on computer science logic and struct
 
 Doing brute force way, incrementing each find of the initial array, on the correct dictionary key. Frequency will be 
 the value of it.
+
+## function return
+
+This function should return no value. It is expected just to print "Yes" or "No".
+
