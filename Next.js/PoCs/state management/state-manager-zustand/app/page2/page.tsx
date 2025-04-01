@@ -1,3 +1,4 @@
+'use client';
 import useStore  from '@/lib/store';
 import Link from 'next/link';
 
