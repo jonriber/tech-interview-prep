@@ -40,3 +40,20 @@ Key components:
 - When object has many optional fields or configurations
 - When you want different representations of the same object
 - When object creation is complex or multi-step
+
+## Exercises
+
+SQL Query Builder:
+Create a class that builds SQL SELECT queries step by step:
+`python
+  builder.select("id", "name").from_table("users").where("age > 30").order_by("name").build()
+`
+
+Car Configurator:
+Model a car configurator where customers can choose engine type, number of seats, color, sunroof, GPS, etc.
+
+Email Builder:
+Create an email message builder with fields for to, from, subject, body, attachments, and optional cc and bcc.
+
+Resume Generator:
+Use the builder pattern to construct a resume with optional sections: work experience, education, skills, projects, and references.
