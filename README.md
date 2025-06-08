@@ -1,6 +1,6 @@
-# tech-interview-prep
+# Software Engineering - Theory and applications
 
-Continuous updates for technical preparation. This repo includes personal notes about different software development
+Continuous updates for continuous learning on Software Engineering. This repo includes personal notes about different software development
 topics, system designs, tools, frameworks and languages.
 
 ## Updated List
