@@ -15,3 +15,6 @@ topics, system designs, tools, frameworks and languages.
 - Next.js
 - Python
 - OOP
+
+
+## Connection with Discord dev community
