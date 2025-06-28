@@ -18,3 +18,5 @@ topics, system designs, tools, frameworks and languages.
 
 
 ## Connection with Discord dev community
+
+insert discord server link
