@@ -41,3 +41,29 @@ Zoo Management:
 
 - classes: Animal -> Lion, Elephant, Monkey
 - Methods: make_sound(), feed()
+
+## Refactor old code
+
+In order to exercise and put theory into practice, it is a good idea to refactor some procedural code into OOP.
+
+- Wrap functions and related data together
+- Replace global variables with class attributes
+- Add abstraction layers (Repository, Service, Controller)
+
+## Read and analyze OOP code
+
+Also, another way to practice is to analyze real-world projects or open-source codebases and identify OOP concepts:
+
+- Identify classes and responsibilities
+- Observe how inheritance and composition are used
+- Note how data is being handle, validation and operations
+
+## Challenges
+
+Design a ride sharing app:
+
+- Possible classes: Driver, Rider, Ride, Location
+
+Design a hotel booking system:
+
+- Possible classes: Room, Guest, Booking, Invoice
