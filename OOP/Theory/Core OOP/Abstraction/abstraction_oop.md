@@ -55,3 +55,24 @@ On the example above, I am defining the abstractmethod `make_sound` on the Anima
 implementing it there. Instead, implementation goes inside subclasses.
 
 ## Why to use this?
+
+Reasons to implement this into any code:
+
+- Reduce complexity: working with high-level structures
+- Improve maintainability: implementation changes wont affect users
+- Scalability: Easy to extend with new types (new animals)
+- Code reusability
+
+## Practice Ideas
+
+Payment processor interface
+
+- Abstract class: PaymentMethod
+- Methods: pay()
+- subclasses: CreditCard, Paypal, Crypto
+
+Shape System
+
+- Abstract class: Shape
+- Methods: area(), perimeter()
+- subclasses: Circle, Rectangle
