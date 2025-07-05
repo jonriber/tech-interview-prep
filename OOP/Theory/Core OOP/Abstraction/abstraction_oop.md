@@ -24,3 +24,34 @@ In programming languages, abstraction is commonly implemented using:
 - Method hiding via public/protected/private modifiers
 
 ## Python example of abstraction
+
+Here is a quick example:
+
+```python
+
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+
+  @abstractmethod
+  def make_sound(self):
+    pass
+
+class Dog(Animal):
+  def make_sound(self):
+    return "Woof"
+
+class Cat(Animal):
+  def make_sound(self):
+    return "Miauu"
+
+animals = [Dog(), Cat()]
+
+for animal in animals:
+  print(animal.make_sound())
+```
+
+On the example above, I am defining the abstractmethod `make_sound` on the Animal class as an interface, but I am not
+implementing it there. Instead, implementation goes inside subclasses.
+
+## Why to use this?
