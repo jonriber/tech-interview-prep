@@ -13,3 +13,27 @@ In python there are two main types of polymoshpism:
 ## Methed Overriding
 
 When a subclass provides a specifc implementation of a method already defined in its superclass.
+
+```python
+
+class Animal:
+  def speak(self):
+    return "some sound"
+  
+class Dog(Animal):
+  def speak(self):
+    return "woof"
+
+class Cat(Animal):
+  def speak(self):
+    return "Meow"
+
+animals = [Dog(), Cat(), Animal()]
+
+for animal in animals:
+  print(animal.speak())
+
+```
+
+Each object respondes differently to the same method call `speak()`.
+
