@@ -59,3 +59,30 @@ lift_off(Airplane())
 ```
 
 Python doesn't care about the type of object, as long as it has the `fly()` method. This is dynamic polymorphism.
+
+
+## Method Overloading
+
+Python does not support traditional method overloading like Java or C++, but it is possible to achieve similar
+behavior using default arguments or `*args`.
+
+```python
+
+class Calculator:
+  def add(self, a, b=0, c=0):
+    return a + b + c
+
+calc = Calculator()
+print(calc.add(5)) # 5
+print(calc.add(5, 10)) # 15
+print(calc.add(5,10,15)) # 30
+
+
+```
+
+## Practice exercices
+
+Write a simple class structure like the following:
+
+- Base class: Shape with a method area()
+- subclasses: Rectangle, Circle, Triangle, each implementing their own area()
