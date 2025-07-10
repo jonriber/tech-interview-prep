@@ -26,3 +26,20 @@ It protects against:
 
 In other words, PostgreSQL makes sure that the results of concurrent transactions could have happened if they were
 run one at a time, in some serial order.
+
+## Why it is important 
+
+- Data correctness first: Serializable isolation eliminates subtle data corruption bugs that are hard to test for and 
+even harder to detect in production.
+- Safer defaults: In complex apps, especially ones involving financials, scheduling, or health data, consistency is more
+important than raw speed.
+- Preventing concurrency anomalies: Even developers with good intentions may not understand all possible race conditions
+that weaker isolation levels allows.
+
+## Trade-offs
+
+When serializing transactions, there are trade-offs to take into consideration:
+
+- Performance: Serializable mode can result in more frequent transactions retries if there's a conflict. PostgreSQL 
+does not lock everything pessimistically- it uses a method called `Serializable snapshot Isolation (SSI)`.
+- Complexity: Code must handle retrying transactions when serialization failures occur (error code 40001)
