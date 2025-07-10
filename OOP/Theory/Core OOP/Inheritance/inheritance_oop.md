@@ -26,3 +26,20 @@ class Dog(Animal):
 dog = Dog("Rex")
 print(dog.speak())
 ```
+
+## super() method
+
+The `super()` method is used when one wants to invoke or use a method from the parent class
+
+```python
+
+class Cat(Animal):
+  def __init__(self, name, color):
+    super().__init__(name)
+    self.color = color
+
+  def speak(self):
+    return f"{self.name} meows!"
+
+```
+
