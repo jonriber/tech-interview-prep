@@ -43,3 +43,18 @@ When serializing transactions, there are trade-offs to take into consideration:
 - Performance: Serializable mode can result in more frequent transactions retries if there's a conflict. PostgreSQL 
 does not lock everything pessimistically- it uses a method called `Serializable snapshot Isolation (SSI)`.
 - Complexity: Code must handle retrying transactions when serialization failures occur (error code 40001)
+
+## When to use
+
+- High-concurrency scenarions with complex business rules
+- Financial or healthcare systems where correctness trumps performance
+- Multi-step workflows that read and write related data
+- When you can handle retries properly in code
+
+## Best practices
+
+If applying serialization, application logic must ensure:
+
+- Catches and retries on serialization failures (40001)
+- Logs conflicts for future debugging
+- Minimizes the scope of transactions to reduce conflict probability
