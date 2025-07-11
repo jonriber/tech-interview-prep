@@ -28,9 +28,19 @@ Structural Patterns:
 - Adapter
 - Decorator
 - Composite
+- Bridge
+- Facade
+- Flyweight
+- Proxy
 
 Behavioral Patterns:
 
 - Strategy
 - Observer
 - Command
+- Interpreter
+- Meadiator
+- Memento
+- State
+- Template Method
+- Visitor
