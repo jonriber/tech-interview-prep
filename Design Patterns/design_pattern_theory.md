@@ -21,6 +21,7 @@ Creational Patterns:
 - SingleTon
 - Factory
 - Builder
+- Prototype
 
 Structural Patterns:
 
